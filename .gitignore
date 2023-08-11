@@ -1,3 +1,5 @@
 __pycache__
 /ckpt*
-wandb*
+/wandb*
+/cache*
+/saves
