@@ -1,0 +1,12 @@
+CUDA_VISIBLE_DEVICES=0 python src/train_bash.py \
+    --stage sft \
+    --model_name_or_path /data/guanbo/Baichuan-7B-Base/ \
+    --do_predict \
+    --dataset alpaca_gpt4_zh \
+    --template default \
+    --finetuning_type lora \
+    --checkpoint_dir ckpt_7b_ft \
+    --output_dir ckpt_7b_ft_result \
+    --per_device_eval_batch_size 8 \
+    --max_samples 100 \
+    --predict_with_generate
